@@ -61,12 +61,17 @@ header {
     position: relative;
     z-index: 1;
     
-    width: 80%;
-    margin-left: 20%;
     height:auto;
+    width: 80%;
+    
+    margin-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    
+    
     text-align: center;
     
-    border: 1px solid red;
     background-color: purple;
 }
 
@@ -141,10 +146,10 @@ nav a{
 .logo{text-align: center;}
 
 .contact{
-    margin-left: 180px;
-    margin-top: 25%;
+    margin-left: 200px;
+    /*margin-top: 25%;*/
     text-align: center;
-    transform: rotate(-14deg);
+    /*transform: rotate(-14deg);*/
         background-color: #7E736E;
 }
 .contact h4{
@@ -177,8 +182,14 @@ header{
 *  Main
 *----------------------------*/
 main section{
+    background-color: #7E736E;
+    opacity: 0.50;
+    
     border: 1px black solid;
+    border-radius: 10px 10px 40px 10px;
+    
     margin-bottom: 20px;
+    padding: 30px;
 }
 
 
