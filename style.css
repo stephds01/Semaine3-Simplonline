@@ -205,8 +205,21 @@ main section{
     
     margin-bottom: 20px;
     padding: 30px 30px 30px 60px;
-    
-    
+}
+
+main .box {
+    width: 80%;
+}
+
+main .box ul{
+    display: block;
+}
+
+main .box li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+
 }
 
 
