@@ -4,41 +4,108 @@
 html, body {
     margin: 0; 
     padding: 0;
+    
+    background-color: #eee;
+    /*background-image: url('images/tableau_nulerique.jpg');*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*background-size: cover;*/
 }
-h1 {}
-h2 {}
-h3 {}
-h4 {}
-h5 {}
-h6 {}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin: 0;
+}
+h2 {
+    display: block;
+    font-size: 1.8em;
+    margin: 0;
+}
+h3 {
+    display: block;
+    font-size: 1.5em;
+    margin: 0;}
+h4 {
+    display: block;
+    font-size: 1em;
+    margin: 0;}
+h5 {
+    display: block;
+    font-size: 0.8em;
+    margin: 0;}
+h6 {
+    display: block;
+    font-size: 0.5em;
+    margin: 0;}
 
 
 a {
-    color: red;
-    
+    color: red
+    font-size: 20px;
 }
 a:hover {
     color: purple;
     
 }
 
-
-
+.clear{clear: both}
 
 /********************************
 *          layout
 ********************************/
-.container {
-width: 100%;
-margin: auto;
+.container{
+    position: relative;
 }
-
 header {
-
+    position: relative;
+    z-index: 1;
+    
+    width: 80%;
+    margin-left: 20%;
+    height:auto;
+    text-align: center;
+    
+    border: 1px solid red;
+    background-color: purple;
 }
 
 nav {
+    width: 355px;
+    height: 1000px;
+    
+    padding:0;
+    margin: 0;
 
+    position: fixed;
+    top: -84px;
+    left: -123px;
+    z-index :9;
+     
+    background-color: rgb(74, 60, 53);
+     
+    text-align: center;
+     
+    padding-top: 100px;
+     
+    transform: rotate(14deg);
+        -ms-transform: rotate(14deg); /* Ie*/
+        -moz-transform: rotate(14deg); /* firefox*/
+        -webkit-transform: rotate(14deg); /* safari & chrome*/
+        -o-transform: rotate(14deg); /* opera*/
+}
+
+main{
+    width: 80%;
+    margin-left: 20%;
+
+}
+
+footer {
+    width: 80%;
+    margin-left: 20%;
+    
+    background-color: purple;
 }
 
 
@@ -49,6 +116,70 @@ nav {
 *          Element
 ********************************/
 
+
+/*---------------------------
+*  Nav-Bar
+*----------------------------*/
+nav a{
+    width: 150px;
+    
+    display: block;
+    
+    margin-left: 57%;
+    margin-bottom: 15px;
+    
+    background-color: #7E736E;
+    border: 1px solid #746B66;
+    
+    line-height: 2;
+    text-align: left;
+    color: #eee;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.logo{text-align: center;}
+
+.contact{
+    margin-left: 180px;
+    margin-top: 25%;
+    text-align: center;
+    transform: rotate(-14deg);
+        background-color: #7E736E;
+}
+.contact h4{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    
+    color: purple;
+    text-align: left;
+}
+.contact a { 
+    width: 20px;
+    
+    display: inline-block;
+    
+    margin: 0 10px;
+    background-color: transparent;
+    border: none;
+
+    text-align: center;
+
+}
+/*---------------------------
+*  Header
+*----------------------------*/
+header{
+    color: #eee;
+}
+/*---------------------------
+*  Main
+*----------------------------*/
+main section{
+    border: 1px black solid;
+    margin-bottom: 20px;
+}
 
 
 
