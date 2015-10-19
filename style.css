@@ -5,6 +5,9 @@ html, body {
     margin: 0; 
     padding: 0;
     
+    font-size: 14px;
+    color: #333;
+    
     background-color: #eee;
     /*background-image: url('images/tableau_nulerique.jpg');*/
     /*background-position: center;*/
@@ -14,30 +17,30 @@ html, body {
 }
 h1 {
     display: block;
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 0;
 }
 h2 {
     display: block;
-    font-size: 2.5em;
+    font-size: 2.3em;
     color: purple;
     margin: 0;
 }
 h3 {
     display: block;
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin: 0;}
 h4 {
     display: block;
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 0;}
 h5 {
     display: block;
-    font-size: 0.8em;
+    font-size: 1.3em;
     margin: 0;}
 h6 {
     display: block;
-    font-size: 0.5em;
+    font-size: 1.1em;
     margin: 0;}
 
 
@@ -124,7 +127,7 @@ main img {
 }
 
 .formulaire {
-    width: 25%;
+    width: 35%;
     display: inline-block;
     margin-right: 175px;
     padding: 10px;
@@ -140,12 +143,14 @@ main img {
     width: 40%;
     display: inline-block;
     border: 1px #800080 solid;
-    border-radius: 15px;
+    border-radius: 40px 0;
     padding: 20px;
+    vertical-align: top;
+
 }
 
 .about img {
-    /*float: right;*/
+    float: right;
 }
 
 footer {
@@ -173,8 +178,9 @@ nav a{
     
     display: block;
     
-    margin-left: 57%;
+    margin-left: 54%;
     margin-bottom: 15px;
+    padding-left: 10px;
     
     background-color: #7E736E;
     border: 1px solid #746B66;
@@ -189,7 +195,7 @@ nav a{
 .logo{text-align: center;}
 
 .contact{
-    margin-left: 200px;
+    margin-left: 190px;
     /*margin-top: 25%;*/
     text-align: center;
     /*transform: rotate(-14deg);*/
@@ -197,9 +203,11 @@ nav a{
 }
 .contact h4{
     margin-top: 20px;
-    margin-bottom: 10px;
-    padding: 5px;
-    
+    /*margin-bottom: 10px;*/
+    /*padding-left: 10px;*/
+    padding: 5px 0px 0px 10px;
+    font-size: 1.2em;
+     
     color: purple;
     text-align: left;
 }
@@ -208,7 +216,7 @@ nav a{
     
     display: inline-block;
     
-    margin: 0 10px;
+    margin: 0 5px;
     background-color: transparent;
     border: none;
 
@@ -249,7 +257,9 @@ main .box li{
     margin-right: 20px;
 
 }
-
+main h2{
+    padding-bottom: 15px;
+}
 .competences h3 {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -267,7 +277,19 @@ footer{
     color: white;
 }
 
+.btn {
+    width: 300px;
+    height: 30px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    background-color: #800080 ;
+    color: white;
+}
 
 /********************************
 *         State
 ********************************/
+
+.btn:hover{
+        background-image: linear-gradient(#800080,#eeeeee);
+}
