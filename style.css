@@ -119,12 +119,40 @@ main img {
     margin-bottom: 15px;
 }
 
+.fiche-contact {
+    width: 93%;
+}
+
+.formulaire {
+    width: 25%;
+    display: inline-block;
+    margin-right: 175px;
+    padding: 10px;
+}
+
+.formulaire label {
+    float: left;
+    margin-right: 3px;
+    width: 118px;
+}
+
+.about {
+    width: 40%;
+    display: inline-block;
+    border: 1px #800080 solid;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.about img {
+    /*float: right;*/
+}
+
 footer {
     width: 95%;
     margin-left: 3%;
     padding: 5px 30px 5px 5px;
     background-color: purple;
-    
     text-align: right;
 }
 
@@ -222,9 +250,22 @@ main .box li{
 
 }
 
+.competences h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #800080;
+}
 
+.fiche-contac--label {
+    float: left;
+}
+.fiche-contact--input {
+    margin-left: 150px;
+}
 
-
+footer{
+    color: white;
+}
 
 
 /********************************
