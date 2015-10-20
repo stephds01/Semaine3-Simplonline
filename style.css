@@ -9,11 +9,11 @@ html, body {
     color: #333;
     
     background-color: #eee;
-    /*background-image: url('images/tableau_nulerique.jpg');*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-attachment: fixed;*/
-    /*background-size: cover;*/
+}
+.container{
+    position: relative;
+    width: 80%;
+    margin-left: 20%;
 }
 h1 {
     display: block;
@@ -29,46 +29,46 @@ h2 {
 h3 {
     display: block;
     font-size: 1.8em;
-    margin: 0;}
+    margin: 0;
+    color: #4a3c35;
+}
 h4 {
     display: block;
     font-size: 1.5em;
-    margin: 0;}
+    margin: 0;
+    
+}
 h5 {
     display: block;
     font-size: 1.3em;
-    margin: 0;}
+    margin: 0;
+    
+}
 h6 {
     display: block;
     font-size: 1.1em;
-    margin: 0;}
-
-
+    margin: 0;
+    
+}
 a {
     color: red
-    font-size: 20px;
 }
 a:hover {
     color: purple;
-    
 }
-
 .clear{clear: both}
 
 /********************************
 *          layout
 ********************************/
-.container{
-    position: relative;
-}
-header {
+.ls-header {
     position: relative;
     z-index: 1;
     
     height:auto;
-    width: 80%;
+    width: 98%;
     
-    margin-left: 20%;
+    /*margin-left: 20%;*/
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
@@ -77,9 +77,10 @@ header {
     text-align: center;
     
     background-color: purple;
+    color: #eee;
 }
 
-nav {
+.ls-nav {
     width: 355px;
     height: 1000px;
     
@@ -104,75 +105,40 @@ nav {
         -o-transform: rotate(14deg); /* opera*/
 }
 
-main{
+ls-main{
     width: 80%;
     margin-left: 20%;
 }
-
-main .realisation {
-    width: 80%;
-    margin-left: 20%;
-    margin: 0 auto;
-    margin-top: 20px;
-    
-}
-
-main img {
-    margin-right: 15px;
-    margin-bottom: 15px;
-}
-
-.fiche-contact {
-    width: 93%;
-}
-
-.formulaire {
-    width: 35%;
-    display: inline-block;
-    margin-right: 175px;
-    padding: 10px;
-}
-
-.formulaire label {
-    float: left;
-    margin-right: 3px;
-    width: 118px;
-}
-
-.about {
-    width: 40%;
-    display: inline-block;
-    border: 1px #800080 solid;
-    border-radius: 40px 0;
-    padding: 20px;
-    vertical-align: top;
-
-}
-
-.about img {
-    float: right;
-}
-
-footer {
-    width: 95%;
-    margin-left: 3%;
+.ls-footer {
+    width: 98%;
+    /*margin-left: 3%;*/
     padding: 5px 30px 5px 5px;
     background-color: purple;
     text-align: right;
+    color: white;
+}
+
+/*************************************************
+*   Widget
+/*************************************************/*
+
+.btn {
+    width: 300px;
+    height: 30px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    background-color: #800080 ;
+    color: white;
 }
 
 
+/*************************************************
+*   modules
+/*************************************************/*
+/*----------------------------
+-------   NAV    ------------
+-----------------------------*/
 
-
-
-/********************************
-*          Element
-********************************/
-
-
-/*---------------------------
-*  Nav-Bar
-*----------------------------*/
 nav a{
     width: 150px;
     
@@ -223,39 +189,44 @@ nav a{
     text-align: center;
 
 }
-/*---------------------------
-*  Header
-*----------------------------*/
-header{
-    color: #eee;
-}
-/*---------------------------
-*  Main
-*----------------------------*/
+
+
+/*----------------------------
+-------   MAIN    ------------
+-----------------------------*/
 main section{
     background-color: #ddd2ce;
-    /*opacity: 0.50;*/
-    
+
     border: 1px black solid;
     border-radius: 10px 10px 40px 10px;
     
     margin-bottom: 20px;
-    padding: 30px 30px 30px 60px;
+    padding: 30px 30px 30px 30px;
 }
-
 main .box {
     width: 80%;
 }
-
 main .box ul{
     display: block;
 }
-
 main .box li{
     list-style: none;
     display: inline-block;
     margin-right: 20px;
-
+}
+main .realisation {
+    width: 80%;
+    margin-left: 20%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.items {
+    border: 1px solid #333;
+    box-shadow: #4a3c35 10px 10px 10px;
+}
+main img {
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 main h2{
     padding-bottom: 15px;
@@ -266,31 +237,42 @@ main h2{
     color: #800080;
 }
 
+
+
+.fiche-contact {
+    width: 95%;
+}
 .fiche-contac--label {
     float: left;
 }
 .fiche-contact--input {
     margin-left: 150px;
 }
-
-footer{
-    color: white;
+.formulaire {
+    width: 35%;
+    display: inline-block;
+    margin-right: 175px;
+    padding: 10px;
+}
+.formulaire label {
+    float: left;
+    margin-right: 3px;
+    width: 118px;
 }
 
-.btn {
-    width: 300px;
-    height: 30px;
-    font-size: 1.3em;
-    border-radius: 10px;
-    background-color: #800080 ;
-    color: white;
-}
 
-.items {
-    border: 1px solid #333;
-    box-shadow: #080808 10px 10px 10px;
-}
+.about {
+    width: 40%;
+    display: inline-block;
+    border: 1px #800080 solid;
+    border-radius: 40px 0;
+    padding: 20px;
+    vertical-align: top;
 
+}
+.about img {
+    float: right;
+}
 
 
 
